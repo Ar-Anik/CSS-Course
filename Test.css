@@ -1,0 +1,17 @@
+h1
+{
+	color : green;
+	font-size : 50px;
+	font-weight : 500;
+	font-family : monospace;
+	font-style : italic;
+}
+
+p
+{
+	color : blue;
+	font-size : 15px;
+	font-weight : 600;
+	font-family : Lucida Console;
+	font-style : oblique;
+}
