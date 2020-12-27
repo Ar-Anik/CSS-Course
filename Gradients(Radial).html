@@ -1,0 +1,61 @@
+<!--
+    background-image: radial-gradient(shape size at position, start-color, ..., last-color)
+    shape size : ellipse, circle;
+    
+    background-image: repeating-radial-gradient(color-1, color-2 percent%, color-3 percent%);
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Radial Gradient </title>
+
+        <style type="text/css">
+
+            .div1
+            {
+                height : 250px;
+                width: 100%;
+                background-image : radial-gradient(yellow, blue, black);
+                background-image : radial-gradient();
+            }
+
+            .div2
+            {
+                height : 250px;
+                width : 100%;
+                background-image : radial-gradient(circle, yellow, blue, black);
+            }
+
+            .div3
+            {
+                height : 250px;
+                width : 100%;
+                background-image : repeating-radial-gradient(yellow, blue 10%, black 30%);
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="div1">
+            Ellipse
+        </div>
+
+        <br> <br>
+        
+        <div class="div2">
+            Circle
+        </div>
+
+        <br><br>
+
+        <div class="div3">
+            Repeat
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,103 @@
+<!--
+    background-image: linear-gradient(direction, color-1, color-2, color-3.........);
+    direction :
+        Top to Bottom (this is default);
+        Left to Right : to right;
+        Diagonal : to bottom right;
+
+    background-image: linear-gradient(angle, color-1, color2);
+    angle : (0 to 180)deg;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Linear Gradients </title>
+
+        <style type="text/css">
+
+            .div1
+            {
+                height : 250px;
+                width: 100%;
+                background-image : linear-gradient(red, green, blue);                
+            }
+
+            .div2
+            {
+                height : 250px;
+                width : 100%;
+                background-image : linear-gradient(to right, red, green, blue);
+            }
+
+            .div3
+            {
+                height : 250px;
+                width : 100%;
+                background-image : linear-gradient(to bottom right, red, green, blue);
+            }
+
+            .div4
+            {
+                height : 250px;
+                width : 100%;
+                background-image : linear-gradient(45deg, red, green, blue);
+            }
+
+            .div5
+            {
+                height : 250px;
+                width : 100%;
+                background-image : linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+            }
+
+            .div6
+            {
+                height : 250px;
+                width : 100%;
+                background-image: repeating-linear-gradient(red, yellow 10%, blue 20%)
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="div1">
+            Top to Bottom
+        </div>
+
+        <br><br>
+
+        <div class="div2">
+            Left to Right
+        </div>
+
+        <br><br>
+
+        <div class="div3">
+            Diagonal
+        </div>
+
+        <br><br>
+
+        <div class="div4">
+            Angle
+        </div>
+
+        <br><br>
+
+        <div class="div5">
+            7 Color            
+        </div>
+
+        <br><br>
+
+        <div class="div6">
+            Repeat
+        </div>
+
+    </body>
+
+</html>
