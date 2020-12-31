@@ -1,0 +1,117 @@
+<!--
+    border-collapse: separate, collapse;
+    tr:nth-child(even/odd);
+    vetical-align : top, bottom, middle;
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Table Tag </title>
+
+        <style>
+
+            .table1
+            {
+                border : 2px solid black;
+                border-collapse: collapse;
+                width : 100%;
+                padding : 10px;
+            }
+
+            .table1 tr, th, td
+            {
+                border : 2px solid black;
+                text-align: center;
+                padding : 10px;
+            }
+
+            .table1 th
+            {
+                background-color: burlywood;
+            }
+
+            .table1 tr:nth-child(even)
+            {
+                background-color: darkcyan;
+            }
+
+            .table1 tr:nth-child(odd)
+            {
+                background-color: hotpink;
+            }
+
+            .table1 tr:hover
+            {
+                text-decoration: underline;
+                color : tomato;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <table class="table1">
+            <caption> <h1> Student Information </h1> </caption>
+
+            <tr>
+                <th> ID </th>
+                <th> Name </th>
+                <th> Phone Number </th>
+                <th> CGPA </th>
+                <th> Semester </th>
+                <th> Section </th>
+            </tr>
+
+            <tr>
+                <td> 18101070 </td>
+                <td> Anik Das </td>
+                <td> 01685947564 </td>
+                <td> 3.99 </td>
+                <td> 3-1 </td>
+                <td> A </td>
+            </tr>
+
+            <tr>
+                <td> 18101073 </td>
+                <td> Aubdur Rob Anik </td>
+                <td> 01685946475 </td>
+                <td> 3.50 </td>
+                <td> 3-2 </td>
+                <td> B </td>
+            </tr>
+
+            <tr>
+                <td> 18101079 </td>
+                <td> Anisul Islam Oni </td>
+                <td> 01742568312 </td>
+                <td> 3.85 </td>
+                <td> 4-1 </td>
+                <td> B </td>
+            </tr>
+
+            <tr>
+                <td> 18101083 </td>
+                <td> Rafiqul Islam </td>
+                <td> 01478548542 </td>
+                <td> 3.52 </td>
+                <td> 4-2 </td>
+                <td> A </td>
+            </tr>
+
+            <tr>
+                <td> 18101006 </td>
+                <td> Osman Goni </td>
+                <td> 01342589021 </td>
+                <td> 3.88 </td>
+                <td> 2-2 </td>
+                <td> B </td>
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
