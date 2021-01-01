@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>  </title>
+
+        <style>
+            
+            .form1 input[type=text]
+            {
+                width : 100%;
+                font-size : 1rem;
+                padding : 10px 20px;
+                box-sizing: border-box;
+                margin : 10px 0;
+                border : 3px solid black;
+                border-radius: 5px;
+                background-color: tomato;
+            }
+
+            #search
+            {
+                background-image: url("search.png");
+                background-repeat: no-repeat;
+                background-position: 5px 8px;
+                font-size: 1rem;
+                padding : 15px 40px;
+                background-color : white;
+                width : 150px;
+                
+                transition-property: all;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                font-weight: bold;
+            }
+
+            #search:focus
+            {
+                background-color: teal;
+                width: 100%;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <form action="" class="form1">
+
+            <input type="text" name="search" id="search" placeholder="search"> <br>
+
+            <label for="firstname"> <b> First Name : </b> </label>
+            <input type="text" name="firstname" id="firstname">
+
+            <label for="lastname"> <b> Last Name : </b> </label>
+            <input type="text" name="lastname" id="lastname">
+
+        </form>
+
+    </body>
+
+</html>

@@ -1,0 +1,125 @@
+<!--
+    transition : width (second, 1..s), height (second, 1..s) , transition-timing-function;
+    transition-delay : 
+    transition-duration :
+    transition-property :
+    transition-timing-function : ease-in, ease, linear, ease-in-out, ease-out;
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Transition Tag </title>
+
+        <style>
+
+            .div1
+            {
+                height: 100px;
+                width: 100px;
+                background-color : blue;
+                transition: width 0s, height 5s;
+                cursor: pointer;
+            }
+
+            .div1:hover
+            {
+                height: 400px;
+                width: 400px;
+                background-color: gold; 
+                text-align: center; 
+            }
+
+            .timing
+            {
+                height : 100px;
+                width : 100px;
+                background-color: goldenrod;
+                transition : width 2s;
+            }
+
+            #time1
+            {
+                transition-timing-function: linear;
+            }
+
+            #time2
+            {
+                transition-timing-function: ease;
+            }
+
+            #time3
+            {
+                transition-timing-function: ease-in;
+            }
+
+            #time4
+            {
+                transition-timing-function: ease-out;
+            }
+
+            #time5
+            {
+                transition-timing-function: ease-in-out;
+            }
+
+            .timing:hover
+            {
+                width : 350px;
+                background-color: cornflowerblue;
+            }
+
+            .individual
+            {
+                height: 100px;
+                width : 100px;
+                background-color: red;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-delay: 1s;
+                transition-timing-function: linear;
+            }
+
+            .individual:hover
+            {
+                width : 350px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="div1">
+            Transition Tag
+        </div>
+
+        <div class="timing" id="time1">
+            <h4> Linear </h4>
+        </div>
+
+        <div class="timing" id="time2">
+            <h4> ease </h4>
+        </div>
+
+        <div class="timing" id="time3">
+            <h4> ease-in </h4>
+        </div>
+
+        <div class="timing" id="time4">
+            <h4> ease-out </h4>
+        </div>
+
+        <div class="timing" id="time5">
+            <h4> ease-in-out </h4>
+        </div>
+
+        <br>
+        <div class="individual">
+            
+        </div>
+
+    </body>
+
+</html>

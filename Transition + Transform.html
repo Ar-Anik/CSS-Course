@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Transition + Transform </title>
+
+        <style>
+
+            .div1
+            {
+                height: 100px;
+                width: 100px;
+                background-color: darkgreen;
+                transition : width 2s, height 2s, transform 2s;
+            }
+
+            .div1:hover
+            {
+                height : 300px;
+                width : 300px;
+                transform : rotate(360deg);
+                background-color: yellow;
+            }
+
+            .image
+            {
+                height : 200px;
+                width: 200px;
+                transition : width 2s, height 2s, transform 2s;
+            }
+
+            .image:hover
+            {
+                height : 500px;
+                width : 500px;
+                transform : rotate(720deg);
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="div1">
+        
+        </div>
+
+        <br><br>
+
+        <img class="image" src="picture.jpg" alt="sorry">
+
+    </body>
+
+</html>
