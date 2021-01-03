@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Pseudo Class </title>
+
+        <style>
+
+            .div1 p:first-child
+            {
+                color : blue;
+                font-weight: bold;
+            }
+
+            .div2 p i:first-child
+            {
+                color : blue;
+                font-weight: bold;
+            }
+
+            q:lang(no)
+            {
+                quotes : "~" "~";
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="div1">
+            <p> Bangladesh-India </p>
+            <p> Bangladesh-India </p>
+        </div>
+        <br>
+
+        <div class="div2">
+            <p>
+                I am a <i> programmer </i>, One day a <i> programmer </i> will be a good father. 
+            </p>
+
+            <p>
+                I am a <i> programmer </i>, One day a <i> programmer </i> will be a good father.
+            </p>
+        </div>
+        
+        <br>
+
+        <p>
+            Some text <q lang="no"> Quotation Text </q> Some text.
+        </p>
+
+    </body>
+</html>
