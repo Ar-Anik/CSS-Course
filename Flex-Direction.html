@@ -1,0 +1,58 @@
+<!--
+    flex-direction : row, row-reverse, column, column-reverse;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Flex Direction </title>
+
+        <style>
+            .div1
+            {
+                height : 400px;
+                width : 70%;
+                border : 1px solid black;
+                display : flex;
+                flex-direction: column-reverse;
+            }
+
+            .div1 div
+            {
+                height: 50px;
+                width: 50px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="div1">
+
+            <div style="background-color: yellowgreen">
+                1
+            </div>
+
+            <div style="background-color: tomato">
+                2
+            </div>
+
+            <div style="background-color: tan">
+                3
+            </div>
+
+            <div style="background-color: royalblue">
+                4
+            </div>
+
+            <div style="background-color: palegoldenrod">
+                5
+            </div>
+
+        </div>
+
+    </body>
+</html>

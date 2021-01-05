@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Flex Basis </title>
+
+        <style>
+            .div1
+            {
+                height : 100px;
+                width: 340px;
+                border : 2px solid black;
+                display : flex;
+                text-align: center;
+                margin : 0 auto;
+            }
+
+            .div1 div
+            {
+                flex-basis: 60px;
+            }
+
+            .div1 div:nth-child(3)
+            {
+                flex-basis: 100px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div class="div1">
+            
+            <div style="background-color: cadetblue">
+                1
+            </div>
+
+            <div style="background-color: chartreuse">
+                2
+            </div>
+
+            <div style="background-color: chocolate">
+                3
+            </div>
+
+            <div style="background-color: darkorchid">
+                4
+            </div>
+
+            <div style="background-color: gold">
+                5
+            </div>
+
+        </div>
+
+    </body>
+
+<html>

@@ -1,4 +1,7 @@
-<!-- text-shadow : x-axis y-axis color -->
+<!-- 
+    text-shadow : x-axis y-axis color;
+    text-shadow : x-axis y-axis z-axis color;
+-->
 
 <!DOCTYPE html>
 <html>
@@ -8,14 +11,32 @@
 
         <style type="text/css">
 
-            .style1
+            .shadow1
             {
                 text-shadow : 2px 2px blue;
             }
             
-            .style2
+            .shadow2
             {
                 text-shadow : 4px 2px 1px yellowgreen;
+            }
+
+            .shadow3
+            {
+                color : white;
+                text-shadow : 2px 2px 4px black; 
+            }
+
+            .shadow4
+            {
+                color : white;
+                text-shadow : 2px 2px 2px black, 0px 0px 20px blue, 0px 0px 5px darkblue;
+            }
+
+            .shadow5
+            {
+                color : yellow;
+                text-shadow : -1px -1px black, 2px 2px black, -3px -3px black;
             }
             
         </style>
@@ -23,9 +44,15 @@
 
     <body>
         
-        <h1 class="style1"> Aubdur Rob Anik </h1>
+        <h1 class="shadow1"> Aubdur Rob Anik </h1>
         
-        <h1 class="style2"> Aubudr Rob Anik </h1>
+        <h1 class="shadow2"> Aubudr Rob Anik </h1>
+
+        <h1 class="shadow3"> Aubdur Rob Anik </h1>
+
+        <h1 class="shadow4"> Aubdur Rob Anik </h1>
+
+        <h1 class="shadow5"> Aubdur Rob Anik </h1>
     </body>
 
 </html>

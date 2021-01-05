@@ -1,0 +1,66 @@
+<!--
+    flex-flow : row nowrap, row-reverse nowrap, column nowrap, column-reverse nowrap, row wrap, row-reverse wrap, 
+                column wrap, column-reverse wrap, row wrap-reverse, row-reverse wrap-reverse, column wrap-reverse, 
+                column-reverse wrap-reverse;
+
+    flex-flow : flex-wrap + flex-direction
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Flex Flow </title>
+
+        <style>
+            .div1
+            {
+                height: 300px;
+                width: 200px;
+                color: white;
+                border: 2px solid black;
+                display : flex;
+                flex-flow: column wrap-reverse;
+                text-align: center;
+            }
+
+            .div1 div
+            {
+                height : 50px;
+                width : 50px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="div1">
+
+            <div style="background-color: navy">
+                1
+            </div>
+
+            <div style="background-color: olive">
+                2
+            </div>
+
+            <div style="background-color: moccasin">
+                3
+            </div>
+
+            <div style="background-color: mediumturquoise">
+                4
+            </div>
+
+            <div style="background-color: lightgreen">
+                5
+            </div>
+
+            <div style="background-color: lawngreen">
+                6
+            </div>
+
+        </div>
+
+    </body>
+</html>
