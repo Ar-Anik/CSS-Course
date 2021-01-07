@@ -6,30 +6,69 @@
 
         <style>
             
+            .div1
+            {
+                background-color: gray;
+                width: 100%;
+                position : absolute;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .div1 div
+            {
+                margin : 20px;
+            }
+
             .card1
             {
                 width: 250px;
                 box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19); 
-                margin : left;
                 border-radius: 5px;
+                background-color: black;
             }
 
             .container1
             {
-                padding : 5px;
+                height: 145px;
+                color : white;
+                padding : 10px;
+                box-sizing: border-box;
             }
 
             .card2
             {
                 width : 250px;
                 box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-                margin : left;
                 border-radius: 5px;
+                background-color: black;
             }
 
             .container2
             {
-                padding : 5px;
+                height: 145px;
+                color : white;
+                padding : 10px;
+                box-sizing: border-box;
+                background-color: black;
+            }
+
+            .card3
+            {
+                width: 250px;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+                border-radius: 5px;
+                background-color: black;
+            }
+
+            .container3
+            {
+                height: 145px;
+                color : white;
+                padding : 10px;
+                box-sizing: border-box;
             }
 
         </style>
@@ -38,30 +77,47 @@
 
     <body>
 
-        <div class="card1">
+        <div class="div1">
 
-            <img src="Card_Image/html.jpg" alt="sorry" style="height: 250px ; width: 100%;">
+            <div class="card1">
 
-            <div class="container1">
-                <center> HTML  </center>
-                <p style="text-align: justify"> 
-                    Hypertext Markup Language (HTML) is the standard markup language 
-                    for documents designed to be displayed in a web browser.
-                </p>
+                <img src="Card_Image/html.jpg" alt="sorry" style="height: 250px ; width: 100%;">
+    
+                <div class="container1">
+                    <center> <h3> HTML </h3> </center>
+                    <p style="text-align: justify"> 
+                        Hypertext Markup Language (HTML) is the standard markup language 
+                        for documents designed to be displayed in a web browser.
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="card2">
+    
+                <img src="Card_Image/css.png" alt="sorry" style="height: 250px; width: 100%">
+    
+                <div class="container2">
+                    <center> <h3> CSS </h3> </center>
+                    <p style="text-align: justify">
+                        CSS is designed to enable the separation of presentation and 
+                        content, including layout, colors, and fonts.
+                    </p>
+                </div>
+    
             </div>
 
-        </div>
+            <div class="card3">
 
-        <div class="card2">
+                <img src="Card_Image/javascript.jpg" alt="sorry" style="height: 250px; width: 100%">
 
-            <img src="Card_Image/css.png" alt="sorry" style="height: 250px; width: 100%">
+                <div class="container3">
+                    <center> <h3> Javascript </h3> </center>
+                    <p style="text-align: justify">
+                        JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.
+                    </p>
+                </div>
 
-            <div class="container2">
-                <center> <h3> CSS </h3> </center>
-                <p>
-                    CSS is designed to enable the separation of presentation and 
-                    content, including layout, colors, and fonts.
-                </p>
             </div>
 
         </div>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="en">
+        <title> Grid </title>
+
+        <style>
+
+            .item1{grid-area: Header}
+            .item2{grid-area: Menu}
+            .item3{grid-area: Main}
+            .item4{grid-area: Right}
+            .item5{grid-area: Footer}
+
+            .grid-container
+            {
+                display:grid;
+                grid-template-areas:
+                    'Header Header Header Header Header Header'
+                    'Menu Main Main Main Right Right'
+                    'Menu Footer Footer Footer Footer Footer'
+                ;
+                grid-gap : 10px;
+                background-color: chocolate;
+                padding:10px;
+            } 
+
+            .grid-container div
+            {
+                border: 2px solid black;
+                background-color: ivory;
+                text-align: center;
+                font-size: 30px;
+                padding: 20px 0px;
+            }          
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="grid-container">
+
+            <div class="item1">
+                Header
+            </div>
+
+            <div class="item2">
+                Menu
+            </div>
+
+            <div class="item3">
+                Main
+            </div>
+
+            <div class="item4">
+                Right
+            </div>
+
+            <div class="item5">
+                Footer
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
