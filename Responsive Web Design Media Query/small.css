@@ -1,0 +1,11 @@
+.div1
+{
+    background-color: cadetblue;
+    border : 2px solid blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.div1 h1, h3, h4, h5
+{
+    display: none;    
+}

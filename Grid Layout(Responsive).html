@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Grid Layout </title>
+
+        <style>
+            
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            #header1
+            {
+                grid-area: h;
+                background-color: pink;
+                width: 100%;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            #main1
+            {
+                grid-area: m;
+                width: 100%;
+                height: 100%;
+            }
+
+            #article1
+            {
+                grid-area: a;
+                display: grid;
+                grid-template-areas: 
+                  "s1 a1"
+                  "s2 a2"
+                  "s3 ."
+                ;
+                height: 100%;
+                width: 100%;
+            }
+
+            #article1 section
+            {
+                border: solid;
+                background-color: grey;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            #article1 aside
+            {
+                border: solid;
+                background-color: burlywood;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            #sec1
+            {
+                grid-area: s1;
+            }
+
+            #sec2
+            {
+                grid-area: s2;
+            }
+
+            #sec3
+            {
+                grid-area: s3;
+            }
+
+            #aside1
+            {
+                grid-area: a1;
+            }
+
+            #aside2
+            {
+                grid-area: a2;
+            }
+
+            #footer1
+            {
+                grid-area: f;
+                display: grid;
+                grid-template-areas:
+                  "n1 n2";
+                width: 100%;
+            }
+
+            #footer1 nav
+            {
+                background-color: cornflowerblue;
+                border: solid;
+                height: 100%;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            #nav1
+            {
+                grid-area: n1;
+            }
+
+            #nav2
+            {
+                grid-area: n2;
+            }
+
+            body
+            {
+                height: 100vh;
+                display: grid;
+                grid-template-areas:
+                  "h"
+                  "m"
+                  "m"
+                  "m"
+                  "f";
+                width: 100%;
+                padding: 15px;
+                background-color: lightgreen;
+            }
+
+            @media screen and (max-width: 600px)
+            {
+                #article1
+                {
+                    grid-template-areas: 
+                    "s1"
+                    "s2"
+                    "s3"
+                    "a1"
+                    "a2"
+                    ;
+                }
+
+                #footer1
+                {
+                    grid-template-areas:
+                    "n1"
+                    "n2"
+                    ;
+                }
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+      
+      <header id="header1">
+          <nav> Header Nav </nav>
+      </header>
+
+      <main id="main1">
+          <article id="article1">
+              <section id="sec1"> Section1 </section>
+              <section id="sec2"> Section2 </section>
+              <section id="sec3"> Section3 </section>
+
+              <aside id="aside1"> Aside1 </aside>
+              <aside id="aside2"> Aside1 </aside>
+          </article>
+      </main>
+
+      <footer id="footer1">
+          <nav id="nav1"> Nav1 </nav>
+          <nav id="nav2"> Nav2 </nav>
+      </footer>
+
+      <br><br>
+    </body>
+
+</html>

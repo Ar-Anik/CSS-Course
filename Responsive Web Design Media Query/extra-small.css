@@ -1,0 +1,11 @@
+.div1
+{
+    background-color: burlywood;
+    border : 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div1 h2, h3, h4, h5
+{
+    display: none;    
+}

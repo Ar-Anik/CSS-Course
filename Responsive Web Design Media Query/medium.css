@@ -1,0 +1,11 @@
+.div1
+{
+    background-color: coral;
+    border : 2px dotted green;
+    font-family: monospace;
+}
+
+.div1 h1, h2
+{
+    display: none;    
+}

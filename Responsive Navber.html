@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Responsive Navber </title>
+
+        <style>
+            .menu
+            {
+                background-color: burlywood;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .menu a
+            {
+                text-decoration: none;
+                padding: 20px;
+                color: white;
+            }
+
+            .menu a:hover
+            {
+                background-color: gray;
+                text-decoration: underline;
+            }
+
+            @media screen and (max-width: 600px)
+            {
+                .menu
+                {
+                    flex-direction: column;
+                    padding: 10px;
+                }
+
+                .menu a
+                {
+                    background-color: deepskyblue;
+                    margin: 20px 0px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div class="menu">
+
+            <a href=""> Home </a>
+            <a href="http://aranik43.blogspot.com/"> Blog </a>
+            <a href="https://github.com/Ar-Anik"> Github </a>
+            <a href="mailto:aubdurrob1331@gmail.com"> Contact </a>
+
+        </div>
+
+    </body>
+</html>

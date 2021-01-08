@@ -1,0 +1,16 @@
+.div1
+{
+    background-color: khaki;
+    border: 3px solid black;
+    font-family: serif;
+}
+
+.div1 h1, h2, h3, h4
+{
+    display: none;
+}
+
+.div1 #p2
+{
+    display: none;
+}
