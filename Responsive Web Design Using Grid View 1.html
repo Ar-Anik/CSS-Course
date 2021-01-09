@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Responsive Web Design Using Grid View </title>
+
+        <style>
+
+            *
+            {
+                box-sizing: border-box;
+            }
+
+            #header1
+            {
+                background-color: chocolate;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+
+            #nav-menu
+            {
+                padding: 1% 5%;
+                background-color: cornflowerblue;
+            }
+
+            #nav-menu a
+            {
+                text-align: center;
+                text-decoration: none;
+                padding: 20px;
+                color: white;
+                display: block;
+            }
+
+            #nav-menu a:hover
+            {
+                text-decoration: underline;
+                font-size: 30px;
+            }
+
+            #main1
+            {
+                padding: 1% 5%;
+                background-color: lightcoral;
+            }
+
+            #aside1
+            {
+                padding: 1% 5%;
+                background-color: seashell;
+                text-align: center;
+            }
+
+            #footer1
+            {
+                background-color: black;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            [class*="col-"]
+            {
+                float: left;
+                padding: 10px;
+                width: 100%;
+            }
+
+            .row::after
+            {
+                content: '';
+                clear: both;
+                display: table;
+            }
+
+            @media screen and (min-width: 600px)
+            {
+                 /* For tablet: */
+                .col-s-1 {width: 8.33%;}
+                .col-s-2 {width: 16.66%;}
+                .col-s-3 {width: 25%;}
+                .col-s-4 {width: 33.33%;}
+                .col-s-5 {width: 41.66%;}
+                .col-s-6 {width: 50%;}
+                .col-s-7 {width: 58.33%;}
+                .col-s-8 {width: 66.66%;}
+                .col-s-9 {width: 75%;}
+                .col-s-10 {width: 83.33%;}
+                .col-s-11 {width: 91.66%;}
+                .col-s-12 {width: 100%;}
+            }
+
+            @media screen and (min-width: 770px)
+            {
+                 /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <header id="header1">
+            <h1> Web Design </h1>
+        </header>
+
+        <div class="row">
+
+            <div id="nav-menu" class="col-2 col-s-3">
+                
+                <a href=""> Home </a>
+                <a href=""> Blog </a>
+                <a href=""> Contact </a>
+
+            </div>
+
+            <div id="main1" class="col-7 col-s-9">
+
+                <h1> Skill of Web Designer </h1>
+                <p>
+                    1. VISUAL DESIGN
+                    It might seems obvious that you need design knowledge to be a web designer, 
+                    but visual design focuses on digital products, so it might be different than 
+                    what you expect. In this case, design principles are what determine the look 
+                    and feel of a site. They can range from proportions to typography, to grid systems, 
+                    to color theory. In other words: visual design is your chance to dig into creating 
+                    mood boards and type hierarchy and experimenting with web fonts and color palettes.
+                </p>
+
+                <p>
+                    2. DESIGN SOFTWARE
+                    Like any craftsperson, to do your work you need the right tools. 
+                    Knowing your way around the industry standards will be helpful in 
+                    every case and critical in many. While designing a website can be 
+                    done right in a web browser, tools like Adobe Photoshop, Illustrator, 
+                    and Sketch are ones that almost all designers use for important parts 
+                    of their job like creating mockups, designing assets (think logos and images), 
+                    and of course modifying and enhancing photos. You should learn how to use them.
+                </p>
+
+                <p>
+                    3. HTML
+                    You might not have imagined that a web designer would need to know how to code. 
+                    But nowadays it’s an expected skill for most design jobs. HTML stands for HyperText 
+                    Markup Language, which is the coding language used to put content on a web page and 
+                    give it structure. That means it’s how you turn a bunch of words into headlines, 
+                    paragraphs, and footers. And it’s also how you get the “cool” content like photos, 
+                    videos, and graphics on a website.
+                </p>
+                    
+                <p>
+                    4. CSS
+                    And then there’s HTML’s partner, CSS or Cascading Style Sheets. 
+                    CSS is the code that tells browsers how to format and style HTML 
+                    for a web page. In other words, it’s what makes all the text and 
+                    other content look good. With CSS, you can adjust the colors, change 
+                    the fonts, or add a stunning background—and so much more! This is 
+                    where your eye for design really shines and how you can put your 
+                    creative stamp on every site you create.
+                </p>
+                  
+                <p>
+                    6. TIME MANAGEMENT
+                    Whether you’re interested in learning web design to go freelance or to work 
+                    for a company, you’ll need to stay on top of your schedule and your projects 
+                    to be a standout web designer. This can mean getting to know productivity apps 
+                    like task lists or calendars or, especially if you’re in a large organization, 
+                    learning project tracking tools like Trello or JIRA. Whatever the tools, mastering 
+                    the art of prioritizing and tracking your work will be essential for your success 
+                    (and sanity!) in the busy world of web design.
+                </p>
+
+            </div>
+
+            <div id="aside1" class="col-3 col-s-12">
+                <h3> Google Web Deginer Salary </h3>
+                <p> The typical Google Web Designer salary is $58,117. Web Designer salaries at Google can range from $45,617 - $93,574. </p>
+    
+                <h3> Microsoft Web Deginer Salary </h3>
+                <p> The typical Microsoft Web Developer salary is $63,000. Web Developer salaries at Microsoft can range from $52,984 - $136,220. </p>
+    
+                <h3> Oracle Web Deginer Salary </h3>
+                <p> The typical Oracle Web Developer salary is $74,640. Web Developer salaries at Oracle can range from $58,459 - $84,935. </p>
+    
+                <h3> Amazon Web Deginer Salary </h3>
+                <p> The typical Amazon Web Designer salary is $85,215. Web Designer salaries at Amazon can range from $48,637 - $98,354 </p>
+            </div>
+
+        </div>
+
+        <div id="footer1">
+            &copy; Aubdur Rob Anik-2021
+        </div>
+
+    </body>
+
+</html>
