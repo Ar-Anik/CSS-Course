@@ -1,0 +1,43 @@
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item1 {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid blue;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-item2 {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid red;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item3 {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid greenyellow;
+}
+
+.flex-container4 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flex-item4 {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid tomato;
+}

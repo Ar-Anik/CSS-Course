@@ -1,0 +1,33 @@
+/* Block to Inline ----> inline-block
+Inline to Block ----> block */
+
+#newh1 {
+  border: 2px solid blue;
+  text-align: center;
+  display: none;
+}
+
+#lorem1 {
+  border: 2px solid red;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+.lorem2 {
+  border: 2px solid yellow;
+  margin-top: 20px;
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+#h1tag {
+  display: inline-block;
+}
+
+ul li {
+  display: inline;
+}

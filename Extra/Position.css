@@ -1,0 +1,43 @@
+.div1 {
+  height: 600px;
+  width: 900px;
+  background-color: green;
+  position: relative;
+}
+
+.div2 {
+  height: 180px;
+  width: 180px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.name {
+  border: 2px solid blue;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+
+.lorem {
+  padding-bottom: 1000px;
+}
+
+.fixed {
+  position: fixed;
+  border: 2px solid yellow;
+  bottom: 0px;
+  right: 0px;
+  color: blue;
+  padding: 20px;
+}

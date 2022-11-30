@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After</title>
+
+    <style>
+      .baf:before {
+        content: "Aubdur ";
+        color: red;
+      }
+
+      .baf:after {
+        content: " Anik";
+        color: blue;
+      }
+
+      .baaf {
+        height: 150px;
+        width: 150px;
+        background-color: bisque;
+        transition-duration: 2s;
+      }
+
+      .baaf:hover {
+        height: 300px;
+        width: 300px;
+      }
+
+      .baaf:hover:before {
+        content: "Before ";
+        color: blue;
+      }
+
+      .baaf:hover::after {
+        content: " After";
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="baf">Rob</div>
+
+    <div class="baaf">There is no mercy</div>
+  </body>
+</html>
